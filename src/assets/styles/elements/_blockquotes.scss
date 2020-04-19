@@ -1,0 +1,27 @@
+blockquote {
+  width: 100%;
+  font-family: $font-family-serif;
+  font-style: italic;
+  font-size: 1.5em;
+  font-weight: 900;
+  line-height: 1.1;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+blockquote::after {
+  content: '»';
+  color: $contrast-color;
+}
+
+blockquote::before {
+  content: '«';
+  color: $contrast-color;
+}
+
+@media (min-width: 768px) {
+  blockquote {
+    font-size: 2em;
+    width: 60%;
+  }
+}

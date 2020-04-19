@@ -1,0 +1,17 @@
+/* ==========================================================================
+   #ELEMENTS
+   ========================================================================== */
+
+/**
+  *Links:
+  *Element links without classes styles
+*/
+
+a {
+  color: $contrast-color;
+  text-decoration: underline;
+  
+  &:hover {
+    color: $color-hover;
+  }
+}

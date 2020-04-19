@@ -1,0 +1,56 @@
+/* ==========================================================================
+   #contextual MENU
+   ========================================================================== */
+
+.c-contextual-menu {
+  margin-top: 0;
+  margin-bottom: 0;
+  z-index: 9999;
+}
+
+.c-contextual-menu__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  border-bottom: 1px solid $secondary-color;
+
+  & .c-contextual-menu__list--item {
+    display: inline-block;
+    padding: 10px;
+    color: $secondary-color;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+      color: $contrast-color;
+    }
+  }
+
+  & .c-contextual-menu__list--item--active {
+    color: $contrast-color;
+
+    &:hover {
+      color: $contrast-color;
+    }
+  }
+}
+
+.c-contextual-menu__list--isactive {
+  display: flex;
+  & .c-contextual-menu__list--item {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 768px) {
+  .c-contextual-menu__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    & .c-contextual-menu__list--item {
+      display: inline-block;
+    }
+  }
+}

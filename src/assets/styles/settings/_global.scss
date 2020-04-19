@@ -1,0 +1,28 @@
+/* ==========================================================================
+   #SETTINGS
+   ========================================================================== */
+
+/**
+  *Global:
+  *The global settings file contains any project-wide variables; things that need to be made available to the entire codebase.
+*/
+
+@use "sass:color";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald&family=Playfair+Display&display=swap');
+
+//Fonts
+$font-family-sans-serif: 'Montserrat', sans-serif;
+$font-family-serif: 'Playfair Display', serif;
+
+//Colors
+$primary-color: white;
+//$primary-color: #d9d9d9;
+$secondary-color: #262626;
+$contrast-color: #f24b88;
+$dark-bg: #262626;
+$contrast-element-dark-bg: #b1bf45;
+$bg-menu-color: color.scale($secondary-color, $lightness: 70%);
+$color-link: #ff8066;
+$color-hover: #3e4e59;
+
+$secondarybk-color: #5f6b73;
