@@ -13,3 +13,5 @@ closeMobMenu.addEventListener('click', () => {
   openMobMenu.classList.remove('c-main-menu__hamburguer--noactive');
   closeMobMenu.classList.remove('c-main-menu__close--isactive');
 });
+
+/*Atención, classlist tiene la función toogle() que permite simplicar el código js*/
