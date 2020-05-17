@@ -1,25 +1,79 @@
 .c-card {
-  padding: 10px;
+  position: relative;
   width: 100%;
   margin: 10px;
   border: 1px solid grey;
   border-radius: 5px;
-  transition: ease-in 300ms;
-  &:hover {
-    box-shadow: 7px 7px;
-  }
+  overflow: hidden;
 }
 
-.c-card--link {
-  color: grey;
+.c-card__title {
+  color: $primary-color;
+  padding: 20px 0;
+  margin-bottom: 0;
+  background-color: $secondary-color;
+  width: 100%;
+  text-align: center;
+}
+
+.c-card__description {
+  padding: 10px;
+}
+
+.c-card__image {
+  display: block;
+  margin: auto;
+}
+
+.c-card__action {
+  opacity: 0;
+}
+
+.c-card__overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  background-color: $secondary-color-opacity;
+}
+
+.c-card__footer {
+  padding-bottom: 10px;
+  text-align: center;
   text-decoration: none;
-  &:hover {
-    color: orange;
+}
+
+@media (min-width: 576px) {
+  .c-card {
+    max-width: 50%;
+  }
+
+  .c-card__footer {
+    display: none;
+  }
+
+  .c-card:hover {
+    .c-card__overlay {
+      width: 100%;
+    }
+    .c-card__action {
+      opacity: 1;
+    }
+  }
+
+  .c-card--link {
+    color: $contrast-color;
+    text-decoration: none;
+    &:hover {
+      color: $contrast-color-light;
+    }
   }
 }
 
 @media (min-width: 768px) {
   .c-card {
     max-width: 30%;
+    box-shadow: 0 8px 19px rgba(0, 0, 0, 0.3), 0 8px 5px rgba(0, 0, 0, 0.22);
   }
 }

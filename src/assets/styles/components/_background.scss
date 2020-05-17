@@ -5,11 +5,101 @@
 }
 
 .c-background--item1 {
-  background-image: url('/assets/img/steve-johnson-JYmcVhnMKMQ-unsplash.jpg');
+  position: relative;
+  width: 300px;
+  margin: auto;
+  background-image: url('/assets/img/abstract-sm-576.jpg');
+  //No funciona en IE. Para dar soporte se ha creado un svg mediante illustrator
+  /*
+  clip-path: polygon(
+    0 100%,
+    100% 100%,
+    90% 80%,
+    10% 80%,
+    20% 60%,
+    80% 60%,
+    70% 40%,
+    30% 40%,
+    40% 20%,
+    60% 20%,
+    50% 0
+  );
+  */
 }
+/*
+Pruebas de texto 
+.c-background--item1 {
+  width: 300px;
+  background-image: url('/assets/img/steve-johnson-JYmcVhnMKMQ-unsplash.jpg');
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 150px;
+}*/
+
 .c-background--item2 {
-  background-image: url('/assets/img/steve-johnson-JjuHP7Y-aSo-unsplash.jpg');
+  background-image: url('/assets/img/abstract2-sm-576.jpg');
 }
 .c-background--item3 {
-  background-image: url('/assets/img/steve-johnson-W2OyrItQYmw-unsplash.jpg');
+  background-image: url('/assets/img/abstract3-sm-576.jpg');
+}
+
+@media (min-width: 576px) {
+  .c-background--item1 {
+    background-image: url('/assets/img/abstract-m-768.jpg');
+  }
+  .c-background--item2 {
+    background-image: url('/assets/img/abstract2-m-768.jpg');
+  }
+  .c-background--item3 {
+    background-image: url('/assets/img/abstract3-m-768.jpg');
+  }
+}
+
+@media (min-width: 768px) {
+  .c-background--item1 {
+    background-image: url('/assets/img/abstract-ml-992.jpg');
+  }
+  .c-background--item2 {
+    background-image: url('/assets/img/abstract2-ml-992.jpg');
+  }
+  .c-background--item3 {
+    background-image: url('/assets/img/abstract3-ml-992.jpg');
+  }
+}
+
+@media (min-width: 1200px) {
+  .c-background--item1 {
+    background-image: url('/assets/img/abstract-l-1200.jpg');
+  }
+  .c-background--item2 {
+    background-image: url('/assets/img/abstract2-l-1200.jpg');
+  }
+  .c-background--item3 {
+    background-image: url('/assets/img/abstract3-l-1200.jpg');
+  }
+}
+
+@media (min-width: 1600px) {
+  .c-background--item1 {
+    background-image: url('/assets/img/abstract-xl-1600.jpg');
+  }
+  .c-background--item2 {
+    background-image: url('/assets/img/abstract2-xl-1600.jpg');
+  }
+  .c-background--item3 {
+    background-image: url('/assets/img/abstract3-xl-1600.jpg');
+  }
+}
+
+@media (min-width: 1920px) {
+  .c-background--item1 {
+    background-image: url('/assets/img/abstract-xxl-1920.jpg');
+  }
+  .c-background--item2 {
+    background-image: url('/assets/img/abstract2-xxl-1920.jpg');
+  }
+  .c-background--item3 {
+    background-image: url('/assets/img/abstract3-xxl-1920.jpg');
+  }
 }

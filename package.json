@@ -1,7 +1,7 @@
 {
   "name": "pac01",
   "version": "1.0.0",
-  "description": "Primer trabajo de la asignatura HTML y CSS",
+  "description": "Segundo trabajo de la asignatura HTML y CSS",
   "main": "src/index.html",
   "scripts": {
     "parcel:dev": "parcel src/index.html",

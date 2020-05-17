@@ -27,20 +27,14 @@
 }
 
 @media (min-width: 576px) {
-  .o-container {
-    max-width: 540px;
-  }
 }
 
 @media (min-width: 768px) {
-  .o-container {
-    max-width: 720px;
-  }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .o-container {
-    max-width: 960px;
+    max-width: 1200px;
   }
 }
 
@@ -52,12 +46,16 @@
   align-items: center;
 }
 
+.o-flex--justify-content {
+  justify-content: center;
+}
+
 .o-flex__card {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .o-flex__card {
     justify-content: flex-start;
   }

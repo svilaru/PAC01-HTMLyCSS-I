@@ -11,20 +11,38 @@
     <header class="c-header">
       <nav class="o-container c-main-menu">
         <div class="c-main-menu__brand">
-          <a href="index.html"><img src="assets/img/logo-modern-workflow.png" width="80px"/></a>
+          <a href="index.html">
+            <picture>
+              <source type="image/svg+xml" srcset="/assets/img/logo.svg" />
+              <img
+                src="/assets/img/logo-1x.png"
+                srcset="/assets/img/logo-2x.png 2x"
+                alt="Logo del sitio web Modern Workflow"
+              />
+            </picture>
+          </a>
         </div>
-        <div class="c-main-menu__hamburguer"><i class="fas fa-bars"></i></div>
-        <div class="c-main-menu__close"><i class="far fa-times-circle"></i></div>
+        <div class="c-main-menu__hamburguer">
+          <span class="fas fa-bars" aria-hidden="true" title="Icono del menú de navegación"></span>
+        </div>
         <ul class="c-main-menu__list">
           <li>
-            <a class="c-main-menu__list--item" href="./index.html">Inicio</a>
-          </li>
-          <li>
-            <a class="c-main-menu__list--item" href="./module-bundlers.html">Module Bundlers</a>
+            <a
+              class="c-main-menu__list--item u-transition-ColorBorder u-transition-linear u-transition-duration-02"
+              href="./index.html"
+              >Inicio</a
+            >
           </li>
           <li>
             <a
-              class="c-main-menu__list--item c-main-menu__list--item--active"
+              class="c-main-menu__list--item u-transition-ColorBorder u-transition-linear u-transition-duration-02"
+              href="./module-bundlers.html"
+              >Module Bundlers</a
+            >
+          </li>
+          <li>
+            <a
+              class="c-main-menu__list--item u-transition-ColorBorder u-transition-linear u-transition-duration-02 c-main-menu__list--item--active"
               href="./preprocessors.html"
               >Preprocesadores</a
             >
@@ -41,16 +59,27 @@
             >
           </li>
           <li>
-            <a class="c-contextual-menu__list--item" href="#">LESS</a>
+            <a
+              class="c-contextual-menu__list--item u-transition-color u-transition-linear u-transition-duration-02"
+              href="#"
+              >LESS</a
+            >
           </li>
           <li>
-            <a class="c-contextual-menu__list--item " href="#">PostCSS</a>
+            <a
+              class="c-contextual-menu__list--item u-transition-color u-transition-linear u-transition-duration-02"
+              href="#"
+              >PostCSS</a
+            >
           </li>
         </ul>
       </nav>
       <div class="o-container">
         <div class="o-flex o-flex--align-center">
-          <img src="assets/img/1200px-Sass_Logo_Color.svg.png" width="200px" />
+          <picture>
+            <source type="image/svg+xml" srcset="assets/img/sass.svg" />
+            <img src="assets/img/sass.png" alt="ACME Corp" width="200" />
+          </picture>
           <h1 class="u-text--opacity">SASS</h1>
         </div>
         <p class="u-top-margin-3">
@@ -71,6 +100,29 @@
           exist in CSS yet like variables, nesting, mixins, inheritance and other nifty goodies that
           make writing CSS fun again.
         </blockquote>
+        <picture>
+          <!--[if IE 9]><video style="display: none;"><![endif]-->
+          <source
+            srcset="assets/img/code-sass-sm-576.jpg 575w"
+            media="(max-width: 575px)"
+            sizes="100vw"
+          />
+          <source
+            srcset="assets/img/code-sass-m-768.jpg 767w"
+            media="(max-width: 767px)"
+            sizes="100vw"
+          />
+          <source
+            srcset="assets/img/code-sass-l-1200.jpg 1199w"
+            media="(max-width: 1199px)"
+            sizes="100vw"
+          />
+          <img
+            src="assets/img/code-sass-l-1200.jpg"
+            alt="Captura de pantalla de un script de código CSS"
+          />
+          <!--[if IE 9]></video><![endif]-->
+        </picture>
         <h2 class="u-top-margin-3">Instalación</h2>
         <p>
           Hay varios modos de instalar SASS, mediante la línea de comandos o mediante alguna
@@ -91,11 +143,22 @@
         <p>
           Este sitio web utiliza el preprocesador SASS combinado con la metodología BEMIT para
           aprovechar las ventajas que ofrecen y obtener un código escalable, modular y más fácil de
-          mantener.
+          mantener. En la siguiente imagen se muestra la estructura ITCSS.
         </p>
+
+        <img
+          class="u-special-img u-top-margin-2 u-bottom-margin-1"
+          src="assets/img/itcss.svg"
+          alt="Triangulo invertido que muestra la estructura ITCSS"
+        />
       </div>
     </main>
     <footer class="o-container-fluid c-footer u-text-center">
+      <div class="c-footer__brand u-top-margin-2 u-bottom-margin-1">
+        <a href="index.html"
+          ><img src="assets/img/logo-modern-workflow.png" alt="Logo Modern Workflow"
+        /></a>
+      </div>
       <p class="u-bottom-margin-0">&copy; All rights reserved</p>
     </footer>
     <script src="./index.js"></script>

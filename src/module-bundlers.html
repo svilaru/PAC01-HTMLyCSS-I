@@ -12,30 +12,48 @@
     <header class="c-header">
       <nav class="o-container c-main-menu">
         <div class="c-main-menu__brand">
-          <a href="index.html"><img src="assets/img/logo-modern-workflow.png" width="80px"/></a>
+          <a href="index.html">
+            <picture>
+              <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source type="image/svg+xml" srcset="/assets/img/logo.svg" />
+              <img
+                src="/assets/img/logo-1x.png"
+                srcset="/assets/img/logo-2x.png 2x"
+                alt="Logo del sitio web que está visitando"
+              />
+              <!--[if IE 9]></video><![endif]-->
+            </picture>
+          </a>
         </div>
-        <div class="c-main-menu__hamburguer"><i class="fas fa-bars"></i></div>
-        <div class="c-main-menu__close"><i class="far fa-times-circle"></i></div>
+        <div class="c-main-menu__hamburguer"><span class="fas fa-bars" aria-hidden="true" title="Icono del menú de navegación"></span></div>
         <ul class="c-main-menu__list">
           <li>
-            <a class="c-main-menu__list--item" href="./index.html">Inicio</a>
+            <a
+              class="c-main-menu__list--item u-transition-ColorBorder u-transition-linear u-transition-duration-02"
+              href="./index.html"
+              >Inicio</a
+            >
           </li>
           <li>
             <a
-              class="c-main-menu__list--item c-main-menu__list--item--active"
+              class="c-main-menu__list--item u-transition-ColorBorder u-transition-linear u-transition-duration-02 c-main-menu__list--item--active"
               href="./module-bundlers.html"
               >Module Bundlers</a
             >
           </li>
           <li>
-            <a class="c-main-menu__list--item" href="./preprocessors.html">Preprocesadores</a>
+            <a
+              class="c-main-menu__list--item u-transition-ColorBorder u-transition-linear u-transition-duration-02"
+              href="./preprocessors.html"
+              >Preprocesadores</a
+            >
           </li>
         </ul>
       </nav>
     </header>
     <main>
       <section class="o-container">
-        <h1>Module Bundlers <i class="fas fa-box"></i></h1>
+        <h1>Module Bundlers <span class="fas fa-box" aria-hidden="true"></span></h1>
         <p>
           Los <span lang="en">module bundlers</span> o empaquetadores de módulos JavaScript se
           encargan de agrupar varios módulos en uno o más paquetes optimizados para el navegador
@@ -49,28 +67,61 @@
         </p>
       </section>
       <div class="c-background c-background--item2"></div>
-      <section class="o-container">
+      <div class="o-container">
         <section class="o-flex o-flex__card u-top-margin-5">
-          <h2>Principales Module Bundlers del <span lang="en">mainstream actual</span></h2>
+          <h2 class="u-text-width--100">
+            Principales Module Bundlers del <span lang="en">mainstream actual</span>
+          </h2>
           <article class="o-flex__item c-card">
-            <h2><a href="parcel.html">Parcel</a></h2>
-            <p>
+            <h2 class="c-card__title">Parcel</h2>
+
+            <img class="c-card__image u-bottom-margin-1" src="assets/img/box-cartone.svg" alt="Imagen de una caja de cartón" width="100" />
+            <p class="c-card__description">
               Parcel es un empaquetador de aplicaciones web que se diferencia del resto por la
               experiencia de uso a los desarrolladores, ...
             </p>
+            <div
+              class="o-flex o-flex--justify-content o-flex--align-center c-card__overlay u-transition-bezier--1"
+            >
+              <a class="u-text-decoration--no c-card--link" href="parcel.html">
+                <h2 class="c-card__action u-bottom-margin-0">Entrar</h2>
+              </a>
+            </div>
+            <div class="c-card__footer">
+              <a href="parcel.html">Leer más</a>
+            </div>
           </article>
 
-          <article class="o-flex__item c-card c-card--item">
-            <h2><a href="#">Webpack</a></h2>
-            <p>
+          <article class="o-flex__item c-card">
+            <h2 class="c-card__title">
+              Webpack
+            </h2>
+            <img class="c-card__image u-top-margin-1 u-bottom-margin-1" src="assets/img/webpack-thumbnail.png" alt="Logo del module bundler webpack" width="100" />
+            <p class="c-card__description">
               Es un empaquetador de módulos que permite la gestión de dependencias, conversión de
               formatos, servidor de desarrollo, etc.
             </p>
+
+            <div
+              class="o-flex o-flex--justify-content o-flex--align-center c-card__overlay u-transition-bezier--1"
+            >
+              <a class="u-text-decoration--no c-card--link" href="#">
+                <h2 class="c-card__action u-bottom-margin-0">Entrar</h2>
+              </a>
+            </div>
+            <div class="c-card__footer">
+              <a href="#">Leer más</a>
+            </div>
+
+            </div>
           </article>
         </section>
-      </section>
+      </div>
     </main>
     <footer class="o-container-fluid c-footer u-text-center">
+      <div class="c-footer__brand u-top-margin-2 u-bottom-margin-1">
+        <a href="index.html"><img src="assets/img/logo-modern-workflow.png" alt="Logo del sitio web que está visitando: Modern Workflow"></a>
+       </div>
       <p class="u-bottom-margin-0">&copy; All rights reserved</p>
     </footer>
     <script src="./index.js"></script>

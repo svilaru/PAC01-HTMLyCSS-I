@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <link href="assets/styles/main.scss" rel="stylesheet" />
@@ -11,23 +11,43 @@
     <header class="c-header">
       <nav class="o-container c-main-menu">
         <div class="c-main-menu__brand">
-          <a href="index.html"><img src="assets/img/logo-modern-workflow.png" width="80px"/></a>
+          <a href="index.html">
+            <picture>
+              <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source type="image/svg+xml" srcset="/assets/img/logo.svg" />
+              <img
+                src="/assets/img/logo-1x.png"
+                srcset="/assets/img/logo-2x.png 2x"
+                alt="Logo del sitio web que está visitando: Modern Workflow"
+              />
+              <!--[if IE 9]></video><![endif]-->
+            </picture>
+          </a>
         </div>
-        <div class="c-main-menu__hamburguer"><i class="fas fa-bars"></i></div>
-        <div class="c-main-menu__close"><i class="far fa-times-circle"></i></div>
+        <div class="c-main-menu__hamburguer">
+          <span class="fas fa-bars" aria-hidden="true" title="Icono del menú de navegación"></span>
+        </div>
         <ul class="c-main-menu__list">
           <li>
-            <a class="c-main-menu__list--item" href="./index.html">Inicio</a>
+            <a
+              class="c-main-menu__list--item u-transition-ColorBorder u-transition-linear u-transition-duration-02"
+              href="./index.html"
+              >Inicio</a
+            >
           </li>
           <li>
             <a
-              class="c-main-menu__list--item c-main-menu__list--item--active"
+              class="c-main-menu__list--item u-transition-ColorBorder u-transition-linear u-transition-duration-02 c-main-menu__list--item--active"
               href="./module-bundlers.html"
               >Module Bundlers</a
             >
           </li>
           <li>
-            <a class="c-main-menu__list--item" href="./preprocessors.html">Preprocesadores</a>
+            <a
+              class="c-main-menu__list--item u-transition-ColorBorder u-transition-linear u-transition-duration-02"
+              href="./preprocessors.html"
+              >Preprocesadores</a
+            >
           </li>
         </ul>
       </nav>
@@ -41,31 +61,72 @@
             >
           </li>
           <li>
-            <a class="c-contextual-menu__list--item" href="#">Webpack</a>
+            <a
+              class="c-contextual-menu__list--item u-transition-color u-transition-linear u-transition-duration-02"
+              href="#"
+              >Webpack</a
+            >
           </li>
         </ul>
       </nav>
       <div class="o-container">
-        <div class="o-flex o-flex--align-center">
+        <div class="o-flex o-flex--align-center u-bottom-margin-2">
           <h1 class="u-bottom-margin-0">Parcel</h1>
-          <img src="assets/img/parcel-og.png" width="200" />
+          <img
+            src="assets/img/box-cartone.svg"
+            alt="Imagen de una caja de cartón que simboliza el logo de Parcel"
+            width="200"
+          />
         </div>
-        <p>
+        <p class="u-bottom-margin-0">
           <a href="https://parceljs.org/">Parcel <i class="fas fa-external-link-alt"></i></a> es un
           popular empaquetador de módulos JavaScript popular por su fácil instalación, facilidad de
           uso y su "configuración cero". Este <span lang="en">module bundler</span> permite
           desarrollar partes del sitio o aplicación web como módulos, permitiendo la reutilización
-          del código. Parcel toma los archivos JS (o módulos) separados y reutilizables y los
-          "agrupa" en un sólo archivo para servir al navegador, así como para minimizar la salida.
-          Esta característica mejora directamente el rendimiento del sitio web, ya que el navegador
-          no necesita cargar multitud de archivos individualmente. Además, Parcel también se encarga
-          de otras tareas que incluyen:
+          del código.
         </p>
+        <picture>
+          <!--[if IE 9]><video style="display: none;"><![endif]-->
+          <source
+            srcset="assets/img/lego-m-768.jpg 575w"
+            media="(max-width: 575px)"
+            sizes="100vw"
+          />
+          <source
+            srcset="assets/img/lego-m-768.jpg 767w"
+            media="(max-width: 767px)"
+            sizes="100vw"
+          />
+          <source
+            srcset="assets/img/lego-l-1200.jpg 1199w"
+            media="(max-width: 1199px)"
+            sizes="100vw"
+          />
+          <img
+            src="assets/img/lego-l-1200.jpg"
+            alt="Piezas de lego amontonadas"
+            class="u-top-margin-2 u-bottom-margin-2"
+          />
+          <!--[if IE 9]></video><![endif]-->
+        </picture>
+        <!-- <img
+          class="u-top-margin-2 u-bottom-margin-2"
+          src="assets/img/fran-jacquier-iv6Xbp11olc-unsplash.jpg"
+          alt="Piezas de lego amontonadas"
+        />-->
+        <p>
+          Parcel toma los archivos JS (o módulos) separados y reutilizables y los "agrupa" en un
+          sólo archivo para servir al navegador, así como para minimizar la salida. Esta
+          característica mejora directamente el rendimiento del sitio web, ya que el navegador no
+          necesita cargar multitud de archivos individualmente. Además, Parcel también se encarga de
+          otras tareas que incluyen:
+        </p>
+
         <ul class="u-list">
-          <li class="u-list--item">Monta un servidor local</li>
-          <li class="u-list--item">Compila y minifica HTML, CSS y assets</li>
-          <li class="u-list--item">Transpila Javascript</li>
-          <li class="u-list--item">Recarga de módulos en caliente</li>
+          <li class="u-list--item">Montar un servidor local</li>
+          <li class="u-list--item">Compilar y minificar HTML, CSS y assets</li>
+          <li class="u-list--item">Transpilar Javascript</li>
+          <li class="u-list--item">Recargar módulos en caliente</li>
           <li class="u-list--item">
             <a href="https://parceljs.org/code_splitting.html"
               >Code Splitting <i class="fas fa-external-link-alt"></i
@@ -92,9 +153,47 @@
           instalación de plugins y configuraciones extra, a no ser que sea que no se pueda evitar,
           maximizando el tiempo de desarrollo y producción.
         </p>
+        <picture>
+          <!--[if IE 9]><video style="display: none;"><![endif]-->
+          <source
+            srcset="assets/img/cubo-rubik_mobile-575.jpg 575w"
+            media="(max-width: 575px)"
+            sizes="100vw"
+          />
+          <source
+            srcset="assets/img/cubo-rubik-m-768.jpg 767w"
+            media="(max-width: 767px)"
+            sizes="100vw"
+          />
+          <source
+            srcset="assets/img/cubo-rubik-large-1170.jpg 1199w"
+            media="(max-width: 1199px)"
+            sizes="100vw"
+          />
+          <img src="assets/img/cubo-rubik-large-1170.jpg" alt="Cubo de rubik solucionado" />
+          <!--[if IE 9]></video><![endif]-->
+        </picture>
+
+        <!--El siguiente código comentado en chrome ni edge funciona correctamente, en cambio en firefox sí
+        <img
+          srcset="
+            assets/img/cubo-rubik_mobile-575.jpg                      575w,
+            assets/img/assets/img/cubo-rubik-large-1170.jpg 992w
+          "
+          sizes="(max-width: 575px) 100vw,
+          (min-width: 576px) 558px
+          "
+          src="assets/img/cubo-rubik-large-1170.jpg"
+          alt="Cubo de rubik solucionado"
+        />-->
       </div>
     </main>
     <footer class="o-container-fluid c-footer u-text-center">
+      <div class="c-footer__brand u-top-margin-2 u-bottom-margin-1">
+        <a href="index.html"
+          ><img src="assets/img/logo-modern-workflow.png" alt="Logo Modern Workflow"
+        /></a>
+      </div>
       <p class="u-bottom-margin-0">&copy; All rights reserved</p>
     </footer>
     <script src="./index.js"></script>

@@ -1,0 +1,10 @@
+.u-special-img {
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .u-special-img {
+    width: 70%;
+    max-width: 702px;
+  }
+}
